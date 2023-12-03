@@ -14,11 +14,11 @@ public class Player {
         return points;
     }
 
-    public String display() {
-        return "Player: " + name; 
+    public String getName() {
+        return name;
     }
 
     public String toString() {
-        return (name + " has " + points + " points");
+        return (name + "'s turn. " + name + " has " + points + " points.");
     }
 }
