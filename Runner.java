@@ -60,7 +60,7 @@ public class Runner {
                 }
                 currentPlayer.addWin();
                 System.out.print(currentPlayer.getName() + " is the winner! ");
-                System.out.print(currentPlayer.getName() + " had " + currentPlayer.getPoints() + " points.");
+                System.out.print(currentPlayer.getName() + " had " + currentPlayer.getPoints() + " points. ");
                 System.out.println(currentPlayer.getName() + " wins so far: " + currentPlayer.getWins());
 
                 System.out.println("Play again? (y/n)");
