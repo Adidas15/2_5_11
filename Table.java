@@ -1,6 +1,6 @@
 import java.lang.Math;
 public class Table {
-    private int nims = 10 + (int) (Math.random() * 41);
+    private int nims;
     private int turns;
 
     public boolean changeBoard(int num) {
@@ -12,6 +12,10 @@ public class Table {
         else {
             return false;
         }
+    }
+
+    public void setNims() {
+        nims = 10 + (int) (Math.random() * 41);
     }
 
     public int getNims() {
