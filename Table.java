@@ -1,12 +1,10 @@
 import java.lang.Math;
 public class Table {
     private int nims;
-    private int turns;
 
     public boolean changeBoard(int num) {
-        if (num <= nims/2 && nims >=1) {
+        if (num <= nims/2 && num >=1) {
             nims -= num;
-            turns +=1;
             return true;
         }
         else {

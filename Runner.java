@@ -40,6 +40,9 @@ public class Runner {
                         if (table.changeBoard(pi)) {
                             currentPlayer.addPoints(pi);
                         }
+                        else {
+                            System.out.println("Too many incorrect guesses. You have forfeited your turn. Moving on...");
+                        }
                     }     
                     if (currentPlayer.equals(p1)) {
                         currentPlayer = p2;
@@ -50,8 +53,8 @@ public class Runner {
                 }
                 
                 System.out.print(currentPlayer.getName() + " is the loser! ");
-                System.out.print(currentPlayer.getName() + " had " + currentPlayer.getPoints() + " points.");
-                System.out.println(currentPlayer.getName() + " wins so far: " + currentPlayer.getWins());
+                System.out.print(currentPlayer.getName() + " had " + currentPlayer.getPoints() + " points. ");
+                System.out.println(currentPlayer.getName() + "'s wins so far: " + currentPlayer.getWins());
                 if (currentPlayer.equals(p1)) {
                     currentPlayer = p2;
                 }       
@@ -61,11 +64,12 @@ public class Runner {
                 currentPlayer.addWin();
                 System.out.print(currentPlayer.getName() + " is the winner! ");
                 System.out.print(currentPlayer.getName() + " had " + currentPlayer.getPoints() + " points. ");
-                System.out.println(currentPlayer.getName() + " wins so far: " + currentPlayer.getWins());
+                System.out.println(currentPlayer.getName() + "'s wins so far: " + currentPlayer.getWins());
 
                 System.out.println("Play again? (y/n)");
                 play = sc.next();
             }
+            System.out.println("Game ended");
 
     }
     
